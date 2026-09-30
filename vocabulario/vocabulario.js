@@ -96,7 +96,7 @@ function crearTarjeta(palabra) {
   const palabraIngles = crearElemento("span", "tarjeta-palabra", palabra.ingles);
   palabraIngles.lang = "en";
   frente.append(
-    crearElemento("span", "tarjeta-emoji", palabra.emoji),
+    crearElemento("span", "vocab-emoji", palabra.emoji),
     palabraIngles,
     crearElemento("span", "tarjeta-pista", "Toca para voltear")
   );
@@ -104,7 +104,7 @@ function crearTarjeta(palabra) {
   // Cara trasera: traducción al español
   const atras = crearElemento("div", "tarjeta cara cara-atras");
   atras.append(
-    crearElemento("span", "tarjeta-emoji", palabra.emoji),
+    crearElemento("span", "vocab-emoji", palabra.emoji),
     crearElemento("span", "tarjeta-palabra", palabra.espanol)
   );
 
@@ -129,7 +129,7 @@ function mostrarCategoria(categoria) {
 
   botonesCategoria.forEach((boton) => {
     const activo = boton.dataset.categoria === categoria;
-    boton.classList.toggle("boton-secundario", !activo);
+    boton.className = activo ? "boton" : "boton-secundario";
     boton.setAttribute("aria-pressed", String(activo));
   });
 }

@@ -35,7 +35,7 @@
 }
 
 /* Palabra en inglés */
-.palabra {
+.tarjeta .palabra {
   margin: 0;
   font-size: 1.1rem;
   color: var(--color-texto);
@@ -71,5 +71,20 @@
 
   .palabra {
     font-size: 1rem;
+  }
+
+  #grilla-numeros,
+  #grilla-abecedario {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .tarjeta-numero,
+  .tarjeta-letra {
+    padding: 16px 10px;
+  }
+
+  .boton-escuchar {
+    padding-inline: 8px;
   }
 }
