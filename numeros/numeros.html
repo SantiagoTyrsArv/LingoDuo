@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Fácil - Números y abecedario</title>
+  <!-- Primero los estilos comunes, luego los del módulo -->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="numeros.css">
+  <script src="numeros.js" defer></script>
+</head>
+<body>
+
+  <!-- Encabezado común -->
+  <header class="encabezado">
+    <h1>English Fácil</h1>
+    <nav class="menu">
+      <a href="../index.html">Inicio</a>
+      <a href="numeros.html" aria-current="page">Números y abecedario</a>
+      <a href="../vocabulario/vocabulario.html">Vocabulario</a>
+      <a href="../tobe/tobe.html">Verbo To Be</a>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+
+    <h2>Números y abecedario</h2>
+    <p>Pulsa "🔊 Escuchar" en cada tarjeta para oír la pronunciación en inglés.</p>
+
+    <!-- Botones para alternar entre secciones -->
+    <div class="selector-seccion">
+      <button type="button" class="boton" id="btn-numeros" aria-pressed="true">Números</button>
+      <button type="button" class="boton-secundario" id="btn-abecedario" aria-pressed="false">Abecedario</button>
+    </div>
+
+    <!-- Sección de números (se llena desde numeros.js) -->
+    <section id="seccion-numeros">
+      <h3>Numbers</h3>
+      <div class="grilla" id="grilla-numeros"></div>
+    </section>
+
+    <!-- Sección del abecedario (se llena desde numeros.js) -->
+    <section id="seccion-abecedario" hidden>
+      <h3>The Alphabet</h3>
+      <div class="grilla" id="grilla-abecedario"></div>
+    </section>
+
+    <!-- Aviso si el navegador no soporta síntesis de voz -->
+    <p class="aviso-voz" id="aviso-voz" hidden>
+      Tu navegador no permite reproducir voz. Prueba con Chrome, Edge o Safari.
+    </p>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Estilos propios del módulo "Números y abecedario".
+   Las clases comunes (.contenedor, .grilla, .tarjeta, .boton, etc.)
+   vienen de ../css/estilos.css y no se redefinen aquí. */
+
+/* Botones para alternar entre Números y Abecedario */
+.selector-seccion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+/* Contenido interno de cada tarjeta del módulo */
+.tarjeta-numero,
+.tarjeta-letra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+/* Número o letra en grande */
+.valor {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--color-primario);
+}
+
+/* Emoji de ejemplo en el abecedario */
+.emoji {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* Palabra en inglés */
+.palabra {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--color-texto);
+}
+
+/* Botón de escuchar ocupa el ancho de la tarjeta */
+.boton-escuchar {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Resalta la tarjeta mientras se pronuncia */
+.hablando {
+  outline: 3px solid var(--color-secundario);
+  outline-offset: 2px;
+  border-radius: var(--radio);
+}
+
+/* Aviso de navegador sin soporte de voz */
+.aviso-voz {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radio);
+  background-color: var(--color-fondo);
+  border: 1px dashed var(--color-secundario);
+}
+
+/* Grilla del módulo: tarjetas más compactas en pantallas pequeñas */
+@media (max-width: 480px) {
+  .valor {
+    font-size: 2rem;
+  }
+
+  .palabra {
+    font-size: 1rem;
+  }
+}
