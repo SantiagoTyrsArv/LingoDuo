@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprende y practica el verbo To Be en inglés.">
+  <title>Verbo To Be | English Fácil</title>
+  <link rel="stylesheet" href="../css/estilos.css">
+  <link rel="stylesheet" href="tobe.css">
+  <script src="tobe.js" defer></script>
+</head>
+<body>
+  <header class="encabezado">
+    <h1>English Fácil</h1>
+    <nav class="menu" aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="../numeros/numeros.html">Números y abecedario</a>
+      <a href="../vocabulario/vocabulario.html">Vocabulario</a>
+      <a href="../tobe/tobe.html" aria-current="page">Verbo To Be</a>
+    </nav>
+  </header>
+
+  <main class="contenedor leccion">
+    <section class="introduccion" aria-labelledby="titulo-leccion">
+      <p class="etiqueta">GRAMÁTICA · NIVEL INICIAL</p>
+      <h2 id="titulo-leccion">El verbo <span>To Be</span></h2>
+      <p>El verbo <em>to be</em> significa <strong>ser</strong> o <strong>estar</strong>. Lo usamos para hablar de quiénes somos, cómo estamos y dónde estamos.</p>
+      <div class="resumen-formas" aria-label="Formas del verbo">
+        <span><strong>am</strong> con <em>I</em></span>
+        <span><strong>is</strong> con <em>he, she, it</em></span>
+        <span><strong>are</strong> con <em>you, we, they</em></span>
+      </div>
+    </section>
+
+    <section class="seccion-leccion" aria-labelledby="titulo-conjugacion">
+      <div class="titulo-seccion">
+        <span class="numero-seccion" aria-hidden="true">01</span>
+        <div>
+          <h2 id="titulo-conjugacion">Elige la forma correcta</h2>
+          <p>Cada pronombre tiene su pareja.</p>
+        </div>
+      </div>
+      <div class="tabla-desplazable" tabindex="0" role="region" aria-label="Tabla de pronombres y formas de To Be; desplázate horizontalmente si hace falta">
+        <table class="tabla-pronombres">
+          <thead>
+            <tr><th scope="col">Pronombre</th><th scope="col">To be</th><th scope="col">Ejemplo</th><th scope="col">Traducción</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">I</th><td><span class="forma forma-am">am</span></td><td>I am happy.</td><td>Yo estoy feliz.</td></tr>
+            <tr><th scope="row">You</th><td><span class="forma forma-are">are</span></td><td>You are a student.</td><td>Tú eres estudiante.</td></tr>
+            <tr><th scope="row">He / She / It</th><td><span class="forma forma-is">is</span></td><td>She is at home.</td><td>Ella está en casa.</td></tr>
+            <tr><th scope="row">We / They</th><td><span class="forma forma-are">are</span></td><td>They are friends.</td><td>Ellos son amigos.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="seccion-leccion" aria-labelledby="titulo-oraciones">
+      <div class="titulo-seccion">
+        <span class="numero-seccion numero-dos" aria-hidden="true">02</span>
+        <div>
+          <h2 id="titulo-oraciones">Así se forman las oraciones</h2>
+          <p>Cambia la posición de las palabras para afirmar, negar o preguntar.</p>
+        </div>
+      </div>
+
+      <div class="pestanas" role="tablist" aria-label="Formas de las oraciones con To Be">
+        <button class="pestana" id="tab-afirmativa" type="button" role="tab" aria-selected="true" aria-controls="panel-afirmativa" tabindex="0">Afirmativa</button>
+        <button class="pestana" id="tab-negativa" type="button" role="tab" aria-selected="false" aria-controls="panel-negativa" tabindex="-1">Negativa</button>
+        <button class="pestana" id="tab-interrogativa" type="button" role="tab" aria-selected="false" aria-controls="panel-interrogativa" tabindex="-1">Interrogativa</button>
+      </div>
+
+      <div class="panel-oraciones" id="panel-afirmativa" role="tabpanel" aria-labelledby="tab-afirmativa" tabindex="0">
+        <p class="estructura"><span>Estructura</span><b>Sujeto</b><i>+</i><b>am / is / are</b><i>+</i><b>complemento</b></p>
+        <ul class="lista-ejemplos">
+          <li><p><span class="pieza sujeto">I</span> <span class="pieza verbo">am</span> <span class="pieza complemento">a teacher.</span></p><span class="traduccion">Soy profesor/a.</span></li>
+          <li><p><span class="pieza sujeto">He</span> <span class="pieza verbo">is</span> <span class="pieza complemento">tall.</span></p><span class="traduccion">Él es alto.</span></li>
+          <li><p><span class="pieza sujeto">We</span> <span class="pieza verbo">are</span> <span class="pieza complemento">ready.</span></p><span class="traduccion">Estamos listos.</span></li>
+          <li><p><span class="pieza sujeto">They</span> <span class="pieza verbo">are</span> <span class="pieza complemento">at school.</span></p><span class="traduccion">Están en la escuela.</span></li>
+        </ul>
+      </div>
+
+      <div class="panel-oraciones" id="panel-negativa" role="tabpanel" aria-labelledby="tab-negativa" tabindex="0" hidden>
+        <p class="estructura"><span>Estructura</span><b>Sujeto</b><i>+</i><b>am / is / are</b><i>+</i><b>not</b><i>+</i><b>complemento</b></p>
+        <ul class="lista-ejemplos">
+          <li><p><span class="pieza sujeto">I</span> <span class="pieza verbo">am</span> <span class="pieza negacion">not</span> <span class="pieza complemento">tired.</span></p><span class="traduccion">No estoy cansado/a.</span></li>
+          <li><p><span class="pieza sujeto">She</span> <span class="pieza verbo">is</span> <span class="pieza negacion">not</span> <span class="pieza complemento">my sister.</span></p><span class="traduccion">Ella no es mi hermana.</span></li>
+          <li><p><span class="pieza sujeto">You</span> <span class="pieza verbo">are</span> <span class="pieza negacion">not</span> <span class="pieza complemento">alone.</span></p><span class="traduccion">No estás solo/a.</span></li>
+          <li><p><span class="pieza sujeto">It</span> <span class="pieza verbo">is</span> <span class="pieza negacion">not</span> <span class="pieza complemento">cold.</span></p><span class="traduccion">No hace frío.</span></li>
+        </ul>
+      </div>
+
+      <div class="panel-oraciones" id="panel-interrogativa" role="tabpanel" aria-labelledby="tab-interrogativa" tabindex="0" hidden>
+        <p class="estructura"><span>Estructura</span><b>Am / Is / Are</b><i>+</i><b>sujeto</b><i>+</i><b>complemento</b><i>+</i><b>?</b></p>
+        <ul class="lista-ejemplos">
+          <li><p><span class="pieza verbo">Am</span> <span class="pieza sujeto">I</span> <span class="pieza complemento">late?</span></p><span class="traduccion">¿Llego tarde?</span></li>
+          <li><p><span class="pieza verbo">Is</span> <span class="pieza sujeto">he</span> <span class="pieza complemento">your friend?</span></p><span class="traduccion">¿Es tu amigo?</span></li>
+          <li><p><span class="pieza verbo">Are</span> <span class="pieza sujeto">you</span> <span class="pieza complemento">okay?</span></p><span class="traduccion">¿Estás bien?</span></li>
+          <li><p><span class="pieza verbo">Are</span> <span class="pieza sujeto">they</span> <span class="pieza complemento">at home?</span></p><span class="traduccion">¿Están en casa?</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="seccion-leccion ejercicio" aria-labelledby="titulo-ejercicio">
+      <div class="titulo-seccion">
+        <span class="numero-seccion numero-tres" aria-hidden="true">03</span>
+        <div>
+          <h2 id="titulo-ejercicio">¡Te toca practicar!</h2>
+          <p>Completa cada oración con <strong>am</strong>, <strong>is</strong> o <strong>are</strong>.</p>
+        </div>
+      </div>
+
+      <form id="formulario-ejercicio" novalidate>
+        <ol class="lista-ejercicio">
+          <li data-answer="am"><span class="oracion">I <select name="respuesta-1" aria-label="Completa: I ___ from Mexico" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> from Mexico.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+          <li data-answer="is"><span class="oracion">My brother <select name="respuesta-2" aria-label="Completa: My brother ___ twelve years old" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> twelve years old.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+          <li data-answer="are"><span class="oracion">You <select name="respuesta-3" aria-label="Completa: You ___ a good friend" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> a good friend.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+          <li data-answer="is"><span class="oracion">The cat <select name="respuesta-4" aria-label="Completa: The cat ___ under the table" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> under the table.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+          <li data-answer="are"><span class="oracion">We <select name="respuesta-5" aria-label="Completa: We ___ very excited" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> very excited.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+          <li data-answer="am"><span class="oracion">I <select name="respuesta-6" aria-label="Completa: I ___ ready to learn" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> ready to learn.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+          <li data-answer="are"><span class="oracion">The books <select name="respuesta-7" aria-label="Completa: The books ___ on the desk" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> on the desk.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+          <li data-answer="is"><span class="oracion">It <select name="respuesta-8" aria-label="Completa: It ___ a beautiful day" required><option value="" selected disabled>Elige</option><option value="am">am</option><option value="is">is</option><option value="are">are</option></select> a beautiful day.</span><span class="retroalimentacion" aria-live="polite"></span></li>
+        </ol>
+        <div class="acciones-ejercicio">
+          <button class="boton" type="submit">Verificar respuestas</button>
+          <button class="boton-secundario" id="reiniciar" type="button">Reiniciar</button>
+        </div>
+        <p class="resultado" id="resultado" role="status" aria-live="polite" hidden></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p><strong>English Fácil</strong> · Un paso más cerca de hablar inglés.</p>
+  </footer>
+</body>
+</html>
