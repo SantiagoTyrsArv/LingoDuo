@@ -3,66 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Fácil - Inicio</title>
+  <meta name="description" content="Aprende inglés a tu ritmo con lecciones breves, vocabulario y práctica interactiva.">
+  <title>LingoDuo | Aprende inglés a tu ritmo</title>
   <!-- Estilos comunes del proyecto -->
   <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 
-  <!-- Encabezado común -->
   <header class="encabezado">
-    <h1>English Fácil</h1>
+    <a class="marca" href="index.html" aria-label="LingoDuo, inicio">
+      <span class="marca-simbolo" aria-hidden="true">LD</span>
+      <span class="marca-texto"><strong>LingoDuo</strong><small>Inglés, a tu ritmo</small></span>
+    </a>
     <nav class="menu" aria-label="Navegación principal">
       <a href="index.html" aria-current="page">Inicio</a>
-      <a href="numeros/numeros.html">Números y abecedario</a>
-      <a href="vocabulario/vocabulario.html">Vocabulario</a>
-      <a href="tobe/tobe.html">Verbo To Be</a>
+      <a href="numeros/numeros.html">Números</a>
+      <a href="vocabulario/vocabulario.html">Palabras</a>
+      <a href="tobe/tobe.html">To Be</a>
     </nav>
   </header>
 
   <main class="contenedor">
-
-    <!-- Bienvenida -->
-    <section class="bienvenida">
-      <h2>¡Bienvenido a English Fácil! 👋</h2>
-      <p>
-        Aprende inglés paso a paso con ejercicios sencillos y pronunciación en voz alta.
-        Elige un módulo para comenzar.
-      </p>
+    <section class="bienvenida hero-inicio" aria-labelledby="titulo-inicio">
+      <div class="hero-copy">
+        <p class="sobrelinea">TU ESPACIO PARA APRENDER INGLÉS</p>
+        <h1 id="titulo-inicio">Un idioma nuevo. <span>Un paso a la vez.</span></h1>
+        <p>Practica palabras, sonidos y frases útiles con lecciones cortas que puedes hacer a tu manera.</p>
+        <div class="hero-acciones">
+          <a class="boton" href="numeros/numeros.html">Empezar a aprender</a>
+          <a class="boton-secundario" href="#lecciones">Explorar lecciones</a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Persona practicando en un cuaderno durante su tiempo de estudio" fetchpriority="high">
+        <figcaption><span>PEQUEÑAS LECCIONES, GRANDES AVANCES</span><span>01 / 03</span></figcaption>
+      </figure>
     </section>
 
-    <!-- Tarjetas de acceso a cada módulo -->
-    <section class="grilla">
-      <a class="tarjeta" href="numeros/numeros.html">
-        <span class="tarjeta-emoji" aria-hidden="true">🔢</span>
-        <h3>Números y abecedario</h3>
-        <p>Aprende los números del 1 al 20, las decenas hasta el 100 y a pronunciar las letras de la A a la Z.</p>
-      </a>
-
-      <a class="tarjeta" href="vocabulario/vocabulario.html">
-        <span class="tarjeta-emoji" aria-hidden="true">📚</span>
-        <h3>Vocabulario</h3>
-        <p>Descubre palabras básicas del día a día organizadas por categorías.</p>
-      </a>
-
-      <a class="tarjeta" href="tobe/tobe.html">
-        <span class="tarjeta-emoji" aria-hidden="true">🧩</span>
-        <h3>Verbo To Be</h3>
-        <p>Practica "am", "is" y "are" en oraciones afirmativas, negativas y preguntas.</p>
-      </a>
+    <section id="lecciones" aria-labelledby="titulo-lecciones">
+      <div class="modulos-titulo">
+        <div>
+          <p class="sobrelinea">RUTAS DE APRENDIZAJE</p>
+          <h2 id="titulo-lecciones">¿Qué quieres practicar hoy?</h2>
+        </div>
+        <p>Elige una lección para comenzar.</p>
+      </div>
+      <div class="grilla">
+        <a class="tarjeta tarjeta-modulo" href="numeros/numeros.html">
+          <span class="tarjeta-emoji modulo-numero" aria-hidden="true">🔢</span>
+          <p class="tipo-modulo">ESCUCHA Y REPITE</p>
+          <h3>Números y abecedario</h3>
+          <p>Aprende a contar y practica el sonido de cada letra.</p>
+          <span class="enlace-modulo">Abrir lección <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="tarjeta tarjeta-modulo" href="vocabulario/vocabulario.html">
+          <span class="tarjeta-emoji modulo-vocabulario" aria-hidden="true">📚</span>
+          <p class="tipo-modulo">DESCUBRE PALABRAS</p>
+          <h3>Vocabulario básico</h3>
+          <p>Explora palabras cotidianas y comprueba lo que recuerdas.</p>
+          <span class="enlace-modulo">Abrir lección <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="tarjeta tarjeta-modulo" href="tobe/tobe.html">
+          <span class="tarjeta-emoji modulo-gramatica" aria-hidden="true">🧩</span>
+          <p class="tipo-modulo">CONSTRUYE FRASES</p>
+          <h3>Verbo To Be</h3>
+          <p>Usa am, is y are en afirmaciones, negativas y preguntas.</p>
+          <span class="enlace-modulo">Abrir lección <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
     </section>
-
   </main>
 
-  <!-- Pie de página -->
   <footer class="pie">
-    <p><strong>Proyecto de Software Colaborativo</strong></p>
-    <p>Integrantes:</p>
-    <ul class="integrantes">
-      <li>Santaigo Felipe Arevalo Bastidas</li>
-      <li>Steven Alejandro Ortega Riascos</li>
-      <li>Jose Luis Burbano Buchelly</li>
-    </ul>
+    <div class="pie-contenido">
+      <p><strong>LingoDuo</strong> · Aprende un poco. Avanza mucho.</p>
+      <p>Creado por Santiago Felipe Arévalo Bastidas, Steven Alejandro Ortega Riascos y José Luis Burbano Buchelly.</p>
+    </div>
   </footer>
 
 </body>

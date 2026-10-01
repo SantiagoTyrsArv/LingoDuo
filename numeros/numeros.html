@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Fácil - Números y abecedario</title>
+  <meta name="description" content="Escucha y practica los números y las letras en inglés.">
+  <title>LingoDuo | Números y abecedario</title>
   <!-- Primero los estilos comunes, luego los del módulo -->
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="numeros.css">
@@ -13,19 +14,25 @@
 
   <!-- Encabezado común -->
   <header class="encabezado">
-    <h1>English Fácil</h1>
+    <a class="marca" href="../index.html" aria-label="LingoDuo, inicio">
+      <span class="marca-simbolo" aria-hidden="true">LD</span>
+      <span class="marca-texto"><strong>LingoDuo</strong><small>Inglés, a tu ritmo</small></span>
+    </a>
     <nav class="menu" aria-label="Navegación principal">
       <a href="../index.html">Inicio</a>
-      <a href="numeros.html" aria-current="page">Números y abecedario</a>
-      <a href="../vocabulario/vocabulario.html">Vocabulario</a>
-      <a href="../tobe/tobe.html">Verbo To Be</a>
+      <a href="numeros.html" aria-current="page">Números</a>
+      <a href="../vocabulario/vocabulario.html">Palabras</a>
+      <a href="../tobe/tobe.html">To Be</a>
     </nav>
   </header>
 
   <main class="contenedor">
 
-    <h2>Números y abecedario</h2>
-    <p>Pulsa "🔊 Escuchar" en cada tarjeta para oír la pronunciación en inglés.</p>
+    <section class="cabecera-modulo" aria-labelledby="titulo-numeros">
+      <p class="sobrelinea">RUTA 01 · PRIMEROS PASOS</p>
+      <h1 id="titulo-numeros">Números y abecedario</h1>
+      <p>Escucha cada palabra en inglés y repítela en voz alta. Un buen comienzo para construir vocabulario.</p>
+    </section>
 
     <!-- Botones para alternar entre secciones -->
     <div class="selector-seccion">
@@ -35,13 +42,13 @@
 
     <!-- Sección de números (se llena desde numeros.js) -->
     <section id="seccion-numeros">
-      <h3>Numbers</h3>
+      <h2>Numbers</h2>
       <div class="grilla" id="grilla-numeros"></div>
     </section>
 
     <!-- Sección del abecedario (se llena desde numeros.js) -->
     <section id="seccion-abecedario" hidden>
-      <h3>The Alphabet</h3>
+      <h2>The Alphabet</h2>
       <div class="grilla" id="grilla-abecedario"></div>
     </section>
 
@@ -53,7 +60,7 @@
   </main>
 
   <footer class="pie">
-    <p><strong>English Fácil</strong> · Un paso más cerca de hablar inglés.</p>
+    <div class="pie-contenido"><p><strong>LingoDuo</strong> · Aprende un poco. Avanza mucho.</p></div>
   </footer>
 
 </body>

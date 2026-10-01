@@ -1,16 +1,11 @@
 .leccion {
-  max-width: 920px;
+  max-width: 880px;
 }
 
 .introduccion {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 34px;
-  padding: clamp(25px, 6vw, 46px);
-  border: 1px solid #e8e5ff;
-  border-radius: 26px;
-  background: linear-gradient(125deg, #fff 5%, #f2f0ff 100%);
-  box-shadow: var(--sombra-tarjeta);
+  margin-bottom: 40px;
+  padding: 14px 0 27px;
+  border-bottom: 2px solid #f3c45d;
 }
 
 .etiqueta {
@@ -22,9 +17,9 @@
 
 .introduccion h2 {
   margin: 0 0 10px;
-  font-size: clamp(2rem, 7vw, 3rem);
+  font-size: 2.7rem;
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 .introduccion h2 span {
@@ -45,15 +40,13 @@
 .resumen-formas {
   display: flex;
   flex-wrap: wrap;
-  gap: 9px;
-  margin-top: 22px;
+  gap: 8px 22px;
+  margin-top: 19px;
 }
 
 .resumen-formas span {
-  padding: 7px 13px;
-  border: 1px solid #e6e3fb;
-  border-radius: 999px;
-  background: #fff;
+  padding: 2px 0 2px 11px;
+  border-left: 3px solid var(--color-secundario);
   color: var(--color-texto-suave);
   font-size: 0.92rem;
 }
@@ -63,42 +56,42 @@
 }
 
 .seccion-leccion {
-  margin-top: 35px;
+  margin-top: 42px;
 }
 
 .titulo-seccion {
   display: flex;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 17px;
+  gap: 12px;
+  margin-bottom: 15px;
 }
 
 .numero-seccion {
-  display: grid;
-  width: 44px;
-  flex: 0 0 44px;
-  aspect-ratio: 1;
-  place-items: center;
-  border-radius: 15px;
-  background: #e8e5ff;
+  display: inline-block;
+  width: 34px;
+  flex: 0 0 34px;
+  padding-top: 2px;
+  border-bottom: 2px solid var(--color-secundario);
   color: var(--color-primario);
-  font-size: 0.92rem;
+  font-size: 0.8rem;
   font-weight: 900;
+  line-height: 1.7;
+  text-align: center;
 }
 
 .numero-dos {
-  background: #fff0d7;
-  color: #a76508;
+  border-color: #52b99a;
+  color: #168269;
 }
 
 .numero-tres {
-  background: #dff4e9;
-  color: #13744d;
+  border-color: #e78654;
+  color: #bb5b2c;
 }
 
 .titulo-seccion h2 {
   margin: 0;
-  font-size: clamp(1.25rem, 4vw, 1.55rem);
+  font-size: 1.5rem;
   font-weight: 900;
   line-height: 1.25;
 }
@@ -110,11 +103,10 @@
 
 .tabla-desplazable {
   overflow-x: auto;
-  border: 1px solid var(--color-borde);
-  border-radius: var(--radio);
+  border-top: 2px solid var(--color-primario);
+  border-bottom: 1px solid var(--color-borde);
   background: #fff;
-  box-shadow: var(--sombra-tarjeta);
-  scrollbar-color: #c8c4ee #f4f3fb;
+  scrollbar-color: #b9c5e8 #f2f4f8;
 }
 
 .tabla-pronombres {
@@ -126,14 +118,14 @@
 
 .tabla-pronombres th,
 .tabla-pronombres td {
-  padding: 13px 17px;
+  padding: 12px 15px;
   border-bottom: 1px solid #eeeff5;
   white-space: nowrap;
 }
 
 .tabla-pronombres thead {
-  background: #f7f6ff;
-  color: #555172;
+  background: #f2f5fc;
+  color: #434b66;
   font-size: 0.84rem;
 }
 
@@ -148,64 +140,55 @@
 
 .forma {
   display: inline-block;
-  min-width: 43px;
-  padding: 2px 10px;
-  border-radius: 9px;
+  min-width: 39px;
+  padding: 1px 8px;
+  border-radius: 6px;
   font-weight: 900;
   text-align: center;
 }
 
 .forma-am {
-  background: #eae7ff;
-  color: #5142bd;
+  background: #e3f5ec;
+  color: #176b54;
 }
 
 .forma-is {
   background: #ffedd0;
-  color: #915d0c;
+  color: #995b06;
 }
 
 .forma-are {
-  background: #dff4e9;
-  color: #13744d;
+  background: #e5efff;
+  color: #315f9e;
 }
 
 .pestanas {
   display: flex;
-  gap: 6px;
+  gap: 5px;
   overflow-x: auto;
-  padding: 6px;
-  border: 1px solid var(--color-borde);
-  border-radius: 16px 16px 0 0;
-  background: #f1f1f8;
+  border-bottom: 1px solid #dfe2ec;
 }
 
 .pestana {
-  min-height: 43px;
+  min-height: 46px;
   flex: 1 0 auto;
-  padding: 8px 15px;
+  padding: 8px 17px;
   border: 0;
-  border-radius: 11px;
+  border-bottom: 3px solid transparent;
   background: transparent;
   color: var(--color-texto-suave);
   cursor: pointer;
   font-weight: 900;
-  transition: background-color 160ms ease, color 160ms ease, box-shadow 160ms ease;
+  transition: border-color 160ms ease, color 160ms ease;
 }
 
 .pestana[aria-selected="true"] {
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(48, 45, 104, 0.1);
-  color: var(--color-primario-oscuro);
+  border-color: var(--color-secundario);
+  color: var(--color-primario);
 }
 
 .panel-oraciones {
-  padding: 20px clamp(15px, 4vw, 28px) 24px;
-  border: 1px solid var(--color-borde);
-  border-top: 0;
-  border-radius: 0 0 var(--radio) var(--radio);
-  background: #fff;
-  box-shadow: var(--sombra-tarjeta);
+  padding: 19px 0 10px;
 }
 
 .panel-oraciones[hidden] {
@@ -217,10 +200,9 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 7px;
-  margin: 0 0 17px;
-  padding: 12px 14px;
-  border-radius: 13px;
-  background: #f6f5ff;
+  margin: 0 0 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e9ef;
   color: var(--color-texto-suave);
   font-size: 0.91rem;
 }
@@ -231,15 +213,15 @@
 }
 
 .estructura b {
-  padding: 3px 8px;
-  border-radius: 7px;
-  background: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: #eaf3ed;
   color: var(--color-texto);
   font-size: 0.85rem;
 }
 
 .estructura i {
-  color: #9995b7;
+  color: #8b9b92;
   font-style: normal;
   font-weight: 900;
 }
@@ -247,7 +229,7 @@
 .lista-ejemplos {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0 26px;
+  column-gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -255,7 +237,7 @@
 
 .lista-ejemplos li {
   min-width: 0;
-  padding: 13px 0;
+  padding: 12px 0;
   border-bottom: 1px solid #eeeff5;
 }
 
@@ -271,19 +253,23 @@
 }
 
 .pieza {
-  border-radius: 5px;
+  padding: 0 2px;
+  border-radius: 3px;
 }
 
 .sujeto {
-  color: #5142bd;
+  background: #e5efff;
+  color: #315f9e;
 }
 
 .verbo {
-  color: #07805f;
+  background: #e4f5ef;
+  color: #087453;
 }
 
 .negacion {
-  color: #bd5363;
+  background: #ffede6;
+  color: #ad4d34;
 }
 
 .complemento {
@@ -296,11 +282,9 @@
 }
 
 .ejercicio {
-  padding: clamp(19px, 4vw, 30px);
-  border: 1px solid #e0eee6;
-  border-radius: 22px;
-  background: linear-gradient(135deg, #fff 15%, #f1faf5 100%);
-  box-shadow: var(--sombra-tarjeta);
+  margin-top: 47px;
+  padding: 24px 0 0;
+  border-top: 2px solid #52b99a;
 }
 
 .ejercicio .titulo-seccion {
@@ -310,7 +294,7 @@
 .lista-ejercicio {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 10px 14px;
+  column-gap: 30px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -318,17 +302,23 @@
 }
 
 .lista-ejercicio li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 27px minmax(0, 1fr);
+  align-content: center;
   min-width: 0;
-  min-height: 67px;
-  flex-direction: column;
-  justify-content: center;
-  gap: 3px;
-  padding: 10px 13px;
-  border: 1px solid #e8eaf0;
-  border-radius: 13px;
-  background: #fff;
+  min-height: 66px;
+  padding: 9px 0;
+  border-bottom: 1px solid #e2e5eb;
   counter-increment: ejercicio;
+}
+
+.lista-ejercicio li::before {
+  grid-row: span 2;
+  align-self: center;
+  color: #168269;
+  content: counter(ejercicio, decimal-leading-zero);
+  font-size: 0.76rem;
+  font-weight: 900;
 }
 
 .oracion {
@@ -341,8 +331,8 @@
   min-height: 36px;
   margin: 0 2px;
   padding: 4px 7px;
-  border: 1px solid #d9d8e8;
-  border-radius: 9px;
+  border: 1px solid #bfc5d3;
+  border-radius: 6px;
   background: #fff;
   color: var(--color-texto);
   cursor: pointer;
@@ -380,10 +370,23 @@
   margin-top: 20px;
 }
 
+.acciones-ejercicio .boton,
+.acciones-ejercicio .boton-secundario {
+  min-height: 44px;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.acciones-ejercicio .boton:hover,
+.acciones-ejercicio .boton-secundario:hover {
+  transform: translateY(-1px);
+  box-shadow: none;
+}
+
 .resultado {
   margin: 18px 0 0;
-  padding: 13px 16px;
-  border-radius: 13px;
+  padding: 12px 15px;
+  border-left: 4px solid var(--color-primario);
   background: #fff;
   font-size: 1.04rem;
   font-weight: 900;
@@ -399,20 +402,25 @@
     border-bottom: 1px solid #eeeff5;
   }
 
-  .lista-ejemplos li:last-child {
+  .lista-ejemplos li:last-child,
+  .lista-ejercicio li:last-child {
     border-bottom: 0;
   }
 
   .introduccion {
-    border-radius: 20px;
-  }
-
-  .ejercicio {
-    border-radius: 18px;
+    margin-bottom: 32px;
   }
 }
 
 @media (max-width: 390px) {
+  .introduccion h2 {
+    font-size: 2rem;
+  }
+
+  .lista-ejercicio {
+    grid-template-columns: 1fr;
+  }
+
   .acciones-ejercicio > button {
     width: 100%;
   }

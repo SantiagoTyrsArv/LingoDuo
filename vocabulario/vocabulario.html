@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>English Fácil - Vocabulario</title>
+  <meta name="description" content="Aprende palabras en inglés con tarjetas interactivas y un mini-quiz.">
+  <title>LingoDuo | Vocabulario</title>
   <!-- Primero los estilos comunes, luego los del módulo -->
   <link rel="stylesheet" href="../css/estilos.css">
   <link rel="stylesheet" href="vocabulario.css">
@@ -13,12 +14,15 @@
 
   <!-- Encabezado común del proyecto -->
   <header class="encabezado">
-    <h1>English Fácil</h1>
+    <a class="marca" href="../index.html" aria-label="LingoDuo, inicio">
+      <span class="marca-simbolo" aria-hidden="true">LD</span>
+      <span class="marca-texto"><strong>LingoDuo</strong><small>Inglés, a tu ritmo</small></span>
+    </a>
     <nav class="menu" aria-label="Navegación principal">
       <a href="../index.html">Inicio</a>
-      <a href="../numeros/numeros.html">Números y abecedario</a>
-      <a href="../vocabulario/vocabulario.html" aria-current="page">Vocabulario</a>
-      <a href="../tobe/tobe.html">Verbo To Be</a>
+      <a href="../numeros/numeros.html">Números</a>
+      <a href="../vocabulario/vocabulario.html" aria-current="page">Palabras</a>
+      <a href="../tobe/tobe.html">To Be</a>
     </nav>
   </header>
 
@@ -26,8 +30,11 @@
 
     <!-- Sección de tarjetas de vocabulario -->
     <section class="seccion-vocab" aria-labelledby="titulo-vocab">
-      <h2 id="titulo-vocab">Vocabulario básico</h2>
-      <p class="instrucciones">Elige una categoría y haz clic en una tarjeta para ver su traducción.</p>
+      <div class="cabecera-modulo">
+        <p class="sobrelinea">RUTA 02 · PALABRAS DE CADA DÍA</p>
+        <h1 id="titulo-vocab">Vocabulario básico</h1>
+        <p class="instrucciones">Elige una categoría y voltea las tarjetas para descubrir su traducción.</p>
+      </div>
 
       <!-- Botones de categoría (el JS marca cuál está activa) -->
       <div class="categorias" role="group" aria-label="Categorías de vocabulario">
@@ -66,7 +73,7 @@
   </main>
 
   <footer class="pie">
-    <p><strong>English Fácil</strong> · Un paso más cerca de hablar inglés.</p>
+    <div class="pie-contenido"><p><strong>LingoDuo</strong> · Aprende un poco. Avanza mucho.</p></div>
   </footer>
 
 </body>
